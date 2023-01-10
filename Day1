@@ -26,8 +26,8 @@
       // float
       var num3 = 45.35;
       var num4 = 69.33;
-      var sum2 = num3 - num4;
-      console.log("The difference between numbers is " + sum2);
+      var subs = num3 - num4;
+      console.log("The difference between numbers is " + subs);
 
       // boolean
       var num5 = 10; //-->single equal sign assigns the value to a variable
