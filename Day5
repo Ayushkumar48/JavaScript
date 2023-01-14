@@ -1,0 +1,35 @@
+var a=100; // var can be redeclared and reassigned
+var a=200;
+console.log(a);
+let b=10; // var can't be redeclared but can be reassigned
+b=15;
+console.log(b);
+const c=100; // var can neither be redeclared nor be reassigned
+console.log(c);
+// functional scope- var, let, const are accessible only inside a function not outside
+function calc(){
+    var a1=50;
+    let b1=20;
+    const c1=300;
+    console.log(a1);
+    // Block scope- only var is accessible inside and outside a block whereas let and const are only accessible inside the block
+    if(100<200){
+        var a2=121;
+        let b2=251;
+        const c2=626;
+    }
+    console.log(c);
+}
+calc();
+// if else condition
+var username=prompt("Enter username:");
+var password=prompt("Enter password:");
+if(username=="Admin" && password=="pass"){
+    console.log("You are good to go.")
+}
+else if(username=="Admin" || password=="pass"){
+    console.log("The second condition is correct.")
+}
+else{
+    console("You have entered wrong credentials.")
+}
